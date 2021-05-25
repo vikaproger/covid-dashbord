@@ -1,0 +1,82 @@
+.graphics_map {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;  
+    
+    justify-content: space-between;
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 100%;
+    justify-content: space-between;    
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    background-color: black;;
+}
+
+.graph__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 20px;
+    border-color: red;
+    color: whitesmoke;
+    outline: none;
+    transition: 0.2s;
+    font-size: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: red;    
+}
+
+.btn.active {
+    background-color: red;  
+    opacity: 0.8;
+}
+
+.box1 {
+    height: 40vh;
+    background-color: rgba(38, 38, 38, 1);
+    border-radius: 30px;
+}
+
+.dashboard {
+    color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    font-size: 130%;
+}
+
+.country {
+    font-weight: bold;
+    color: red;
+}
+
+.date {
+    color: whitesmoke;
+    font-size: 170%;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+}
+
+td {
+    padding: 0;
+}
+

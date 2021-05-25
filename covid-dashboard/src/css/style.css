@@ -1,0 +1,11 @@
+@import '/src/css/list.css';
+@import '/src/css/map.css';
+@import '/src/css/switch.css';
+@import '/src/css/graph.css';
+@import '/src/css/normalize.css';
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+}

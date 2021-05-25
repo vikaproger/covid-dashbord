@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid dashboard</title>
+    <link rel="stylesheet" href="./src/css/map.css">
+    <link rel="stylesheet" href="./src/css/graph.css">
+    <link rel="stylesheet" href="./src/css/list.css">
+    <link rel="stylesheet" href="./src/css/switch.css">
+    <link rel="stylesheet" href="./src/css/leaflet.css">
+    <link rel="stylesheet" href="./src/css/normalize.css">
+    <link rel="stylesheet" href="./src/css/body.css">
+    <link rel="stylesheet" href="./src/css/keyboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src = "https://covid.amCharts.com/data/js/world_timeline.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="graphics_map">
+        <div class="graphics__wrapper">
+            <div class="graphics">
+                <canvas id="chart1" width="200" height="60"></canvas>
+                <canvas id="chart2" width="200" height="60"></canvas>
+                <canvas id="chart3" width="200" height="60"></canvas>
+            </div>   
+            <div class="graph__btn">
+                <button class='btn btnConfirmed active'>Confirmed</button>
+                <button class='btn btnDeath'>Death</button>
+                <button class='btn btnRecovered'>Recovered</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="data">
+        <div class="box1">
+            <label class="switch">
+                <input type="checkbox" class="total">
+                <span class="slider round"></span>
+            </label>
+            <label class="switch">
+                <input type="checkbox" class="per100K">
+                <span class="slider2 round"></span>
+            </label>
+            <table class="dashboard">
+                <thead>
+                    <td class="tdCases">
+                        <p>Global cases</p>
+                        <h3 id='cases'></h3>
+                    </td>
+                    <td>
+                        <p>Global Deaths</p>
+                        <h3 id='deaths'></h3>
+                    </td>
+                    <td>
+                        <p>Global Recovered</p>
+                        <h3 id='recovered'></h3>
+                    </td>
+                </thead>
+                <tbody>
+                    <tr class='country'>
+                        <td class='country__td' colspan="3"></td>
+                    </tr>
+                    <tr class='country__values'>
+                        <td id='country__cases'></td>
+                        <td id='country__deaths'></td>
+                        <td id='country__recovered'></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    
+     
+    <script src="./src/js/leaflet.js"></script>    
+    <script src="./src/build/bundle.js"></script>    
+</body>
+</html>

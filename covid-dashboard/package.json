@@ -1,0 +1,29 @@
+{
+  "name": "covid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint:all": "eslint ./src/js/*.js",
+    "eslint:allfix": "eslint ./src/js/*.js --fix",
+    "webpack": "./node_modules/.bin/webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Feintty/covid-dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Feintty/covid-dashboard/issues"
+  },
+  "homepage": "https://github.com/Feintty/covid-dashboard#readme",
+  "devDependencies": {
+    "leaflet": "^0.7.3",
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "chart.js": "^2.9.4"
+  }
+}

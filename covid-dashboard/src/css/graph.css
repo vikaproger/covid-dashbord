@@ -1,0 +1,20 @@
+
+.graphics{
+    width: 60vw;
+    background-color: rgba(38, 38, 38, 1);
+    border-radius: 20px;
+    /* height:50vh; */
+}
+canvas {
+    cursor: pointer;
+}
+
+.graphics__wrapper {
+    display: flex;
+    height: 40%;
+    width: 70vw;
+    background-color: rgba(38, 38, 38, 1);
+    border-radius: 30px;
+    border-color: black;
+    column-gap: 2vw;
+}

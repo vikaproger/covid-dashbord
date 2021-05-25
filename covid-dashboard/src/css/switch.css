@@ -1,0 +1,81 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 30px; 
+} 
+
+.switch input {
+    display:none;
+}
+  
+
+.slider, .slider2 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:red;
+    transition: .4s;
+}
+  
+.slider:before, .slider2:before  {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+}
+  
+.slider::after, .slider2::after {
+    color: white;
+    display: block;
+    content: 'TOTAL';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 65%;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.slider2::after {
+    content: 'absolute values';
+}
+  
+input:checked + .slider::after {
+    content: 'LAST DAY';
+    font-family: Arial, sans-serif;
+    left: 40%;    
+} 
+input:checked + .slider2::after {
+    content: 'per 100K';
+    font-family: Arial, sans-serif;
+    left: 40%;    
+} 
+
+
+input:checked + .slider, input:checked + .slider2  {
+    background-color: red;
+}
+  
+input:focus + .slider, input:focus + .slider2 {
+    box-shadow: 0 0 1px red;
+}
+  
+input:checked + .slider:before, input:checked + .slider2:before {
+    transform: translateX(70px);
+}
+  
+.slider.round, .slider2.round  {
+    border-radius: 17px;
+}
+  
+.slider.round:before, .slider2.round:before {
+    border-radius: 50%;
+}
